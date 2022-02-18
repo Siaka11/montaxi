@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "742476813660",
+    "project_id": "projetchauffeur-af7e0",
+    "storage_bucket": "projetchauffeur-af7e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742476813660:android:8d4ffc764e2104466f9d99",
+        "android_client_info": {
+          "package_name": "com.siakaentreprise.montaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742476813660-viud8q5pv75nfghb7nut1hv33fecuvf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqOYLnHg0FpFQkxH3Z9BOkcuGvSIZmGbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742476813660-viud8q5pv75nfghb7nut1hv33fecuvf9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

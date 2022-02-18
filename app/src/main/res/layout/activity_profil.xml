@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".Screens.ProfilActivity">
+
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/menumain"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:scaleType="center"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_back_para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Paramètres"
+        android:textColor="@color/myred"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/menumain"
+        app:layout_constraintStart_toEndOf="@+id/menumain"
+        app:layout_constraintTop_toTopOf="@+id/menumain" />
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Informations personnelles"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menumain"
+   />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/param_edit"
+
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Editer son profil"
+        android:textColor="@color/myred"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_info">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/param_history"
+
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Historique"
+        android:textColor="@color/myred"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/param_edit">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/param_logout"
+
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="log out"
+        android:textColor="@color/myred"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/param_history">
+
+    </soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphCardView
+
+        android:id="@+id/neumorphCardView"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/param_logout"
+        app:neumorph_shapeType="basin">
+
+        <ImageView
+            android:id="@+id/mycomment"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <TextView
+        android:id="@+id/text_supp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+
+        android:text="Support"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView"
+ />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/param_propos"
+
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="A PROPOS"
+        android:textColor="@color/myred"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_supp">
+
+    </soup.neumorphism.NeumorphButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
